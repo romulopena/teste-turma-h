@@ -3,7 +3,7 @@ function tocaSomAplausos(){
 }
 document.querySelector(".tecla_aplausos").onclick = tocaSomAplausos;
 
-function tocaSomVaias(){
-    document.querySelector("#som_tecla_vaias").play(); 
+function tocaSomVaia(){
+    document.querySelector("#som_tecla_vaia").play(); 
  }
- document.querySelector(".tecla_vaias").onclick = tocaSomVaias;
+ document.querySelector(".tecla_vaia").onclick = tocaSomVaia;

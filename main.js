@@ -7,5 +7,3 @@ function tocaSomVaia(){
     document.querySelector("#som_tecla_vaia").play(); 
  }
  document.querySelector(".tecla_vaia").onclick = tocaSomVaia;
- 
- document.querySelector(".tecla_vaia").onclick = alert("Vaia");

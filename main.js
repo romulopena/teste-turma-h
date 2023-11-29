@@ -1,6 +1,12 @@
 //criei a função tocaSomAplausos e usamos o .play para tocar o som do id
 function tocaSom(idElementoAudio){
-   document.querySelector(idElementoAudio).play(); 
+   const elemento = document.querySelector(idElementoAudio);
+   if (elemento && elemento.localName === 'audio'){
+   elemento.play();
+}else{
+   console.log("Elemento não encontrado ou inválido");
+   }
+
 }
 //criei constante listaDeTeclas e busquei a classe coletiva tecla
  const listaDeTeclas = document.querySelectorAll(".tecla");

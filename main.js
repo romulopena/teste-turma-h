@@ -1,4 +1,6 @@
 //criei a função tocaSomAplausos e usamos o .play para tocar o som do id
+// e criamos a verificação da constante elemento na condicional if agrupado
+//com o elemento && elemento.locaName buscando o 'audio'.
 function tocaSom(idElementoAudio){
    const elemento = document.querySelector(idElementoAudio);
    if (elemento && elemento.localName === 'audio'){
@@ -6,7 +8,6 @@ function tocaSom(idElementoAudio){
 }else{
    console.log("Elemento não encontrado ou inválido");
    }
-
 }
 //criei constante listaDeTeclas e busquei a classe coletiva tecla
  const listaDeTeclas = document.querySelectorAll(".tecla");
@@ -22,8 +23,7 @@ for(let contador = 0;contador < listaDeTeclas.length;contador = contador + 1){
    tecla.onkeydown = function(evento){
       if (evento.code === 'Space' || evento.code === 'Enter'){
          tecla.classList.add('ativa');
-      }
-      
+      } 
    }
    tecla.onkeyup = function(){
       tecla.classList.remove('ativa');
